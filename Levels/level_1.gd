@@ -650,7 +650,7 @@ func _on_tpzona_5_body_entered(body: Node2D) -> void:
 	if body.name == "zidane" and udah_pakai_hoodie == true and udah_masuk_zona4 == false:
 		if is_instance_valid(karakter_hoodie):
 	
-			karakter_hoodie.global_position = Vector2(2045, 95) 
+			karakter_hoodie.global_position = Vector2(2100, 60) 
 			
 			# Mengubah pembatasan kamera mengikuti area vertikal masif
 			atur_batas_kamera("zona_4_parallax")
@@ -723,24 +723,24 @@ func tampilkan_dialog(nama_pembicara: String, isi_dialog: String, ekspresi: Stri
 						"merenung": foto_karakter.texture = load("res://Character Image/avatar_zidane_merenung.png")
 						_: foto_karakter.texture = load("res://Character Image/avatar_zidane.png")
 					foto_karakter.visible = true
-					foto_karakter.global_position = Vector2(-40, 145)
+					foto_karakter.global_position = Vector2(120, 510)
 					foto_karakter.flip_h = false
 				"Loket":
 					foto_karakter.texture = load("res://Character Image/avatar_loket.png")
 					foto_karakter.visible = true
-					foto_karakter.global_position.x = 840
+					foto_karakter.global_position.x = 1450
 					foto_karakter.flip_h = true
 				"Eko":
 					foto_karakter.texture = load("res://Character Image/avatar_eko.png")
 					foto_karakter.visible = true
-					foto_karakter.global_position.x = 840
+					foto_karakter.global_position.x = 1450
 					foto_karakter.flip_h = true
 				"Robot Tua":
 					match ekspresi:
 						"tenang2": foto_karakter.texture = load("res://Character Image/avatar_robot_tenang.png")
 						_: foto_karakter.texture = load("res://Character Image/avatar_robot.png")
 					foto_karakter.visible = true
-					foto_karakter.global_position.x = 840
+					foto_karakter.global_position.x = 1450
 					foto_karakter.flip_h = true
 				"Nenek":
 					match ekspresi:
@@ -748,7 +748,7 @@ func tampilkan_dialog(nama_pembicara: String, isi_dialog: String, ekspresi: Stri
 						"tenang3": foto_karakter.texture = load("res://Character Image/avatar_nenek_tanang3.png")
 						_: foto_karakter.texture = load("res://Character Image/avatar_nenek.png")
 					foto_karakter.visible = true
-					foto_karakter.global_position.x = 840
+					foto_karakter.global_position.x = 1450
 					foto_karakter.flip_h = true
 				_:
 					foto_karakter.visible = false
