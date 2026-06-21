@@ -54,6 +54,7 @@ var dekat_pusat_distrik: bool = false
 @onready var sprite_lemari_jaket = $LemariJaket/LemariJaketSprite2D
 
 # == PERBAIKAN PATH JALUR NODE ==
+# == PERBAIKAN PATH JALUR NODE ==
 @onready var icon_batrai = $ZidaneKaosA/icon_batrai
 @onready var icon_kupon = $ZidaneKaosA/icon_kupon
 @onready var ui_dialog = $UIDialog/KotakDialog
